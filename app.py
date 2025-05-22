@@ -728,5 +728,5 @@ def generate_excel(n_clicks, stock_input, start_q, end_q, selected_profit, selec
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8057)
+    app.run_server(debug=True)
 
