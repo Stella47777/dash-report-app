@@ -5,6 +5,7 @@ import requests
 import plotly.express as px
 import dash_bootstrap_components as dbc
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SANDSTONE])
+server = app.server
 app.index_string = '''
 <!DOCTYPE html>
 <html>
@@ -727,5 +728,5 @@ def generate_excel(n_clicks, stock_input, start_q, end_q, selected_profit, selec
 
 
 if __name__ == "__main__":
-    app.run(debug=True,port=8057)
+    app.run_server(debug=True, port=8057)
 
