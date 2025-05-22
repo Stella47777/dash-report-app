@@ -6,3 +6,6 @@ dash-bootstrap-components
 openpyxl
 gunicorn
 XlsxWriter
+numpy
+python-dotenv
+
